@@ -57,6 +57,7 @@ and most importantly, simply didn't work for me!
 ```
   curl https://mirror.ghproxy.com/https://raw.githubusercontent.com/lzc256/nixos-infect-cn/master/nixos-infect | NIX_CHANNEL=nixos-23.11 bash -x
 ```
+阿里云 Ubuntu 20.04 测试通过
 
 *NB*: This script wipes out the targeted host's root filesystem when it runs to completion.
 Any errors halt execution.
