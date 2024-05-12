@@ -326,7 +326,7 @@ infect() {
   #addgroup nixbld -g 30000 || true
   #for i in {1..10}; do adduser -DH -G nixbld nixbld$i || true; done
   #NIX_INSTALL_URL="${NIX_INSTALL_URL:-https://nixos.org/nix/install}"
-  NIX_INSTALL_URL="${NIX_INSTALL_URL:-https://raw.githubusercontent.com/lzc256/nixos-infect-cn/master/nix-install-cn}"
+  NIX_INSTALL_URL="${NIX_INSTALL_URL:-https://mirror.ghproxy.com/https://raw.githubusercontent.com/lzc256/nixos-infect-cn/master/nix-install-cn}"
   curl -L "${NIX_INSTALL_URL}" | sh -s -- --no-channel-add
 
   # shellcheck disable=SC1090
